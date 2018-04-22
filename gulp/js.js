@@ -5,7 +5,7 @@ var notify =        require("gulp-notify");
 var sourcemaps =    require('gulp-sourcemaps');
 var babel =         require('gulp-babel');
 var include =       require("gulp-include");
-var uglify =        require('gulp-uglify')
+var uglify =        require('gulp-uglify');
 
  
 gulp.task('js', function () {

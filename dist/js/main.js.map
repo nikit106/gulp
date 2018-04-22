@@ -1,1 +1,1 @@
-{"version":3,"sources":["components/1.js","main.js"],"names":["console","log"],"mappings":"AAAAA,QAAAC,IAAA,QCGAD,QAAAA,IAAAA,KAGAA,QAAAA,IAAAA","file":"main.js","sourcesContent":["console.log('1.js');","//=require components/1.js\r\n\r\n\r\nconsole.log('1');\r\n\r\n\r\nconsole.log('2');"]}
+{"version":3,"sources":["components/1.js","main.js"],"names":["console","log"],"mappings":"AAAAA,QAAAC,IAAA,QCKAD,QAAAA,IAAAA","file":"main.js","sourcesContent":["console.log('1.js');","//=require components/1.js\r\n\r\n\r\n\r\n\r\nconsole.log('2');"]}

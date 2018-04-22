@@ -9,7 +9,8 @@ gulp.task('default', function() {
        'js:watch',
        'html:watch',
        'fonts:watch',
-       'img:watch'
+       'img:watch',
+       'libs:watch'
   	],
     'server'
 );
