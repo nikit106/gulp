@@ -16,12 +16,13 @@ gulp.task('libs', function () {
 	    .pipe(cssnano())
 	    .pipe(rename({
 		    dirname: "",
-		    basename: "main",
+		    basename: "libs",
 		    prefix: "",
 		    suffix: ".min",
 		    extname: ".css"
 	    }))
         .pipe(gulp.dest(cnf.dist.css));
+
 	gulp.src(cnf.libs.js)
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 	    .pipe(babel())
