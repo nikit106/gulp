@@ -231,8 +231,113 @@
         color: #ffffff
 
 .team
+    padding: 50px 0 150px 0
     &-body
         &__title
         &__description
         &__people
 
+.team-people
+    display: flex
+    justify-content: space-between
+    position: relative
+
+    &__item
+        width: 22%
+
+    .flickity-page-dots
+        position: absolute
+        display: flex
+        bottom: -50px
+        left: 50%
+        transform: translateX(-50%)
+        .dot
+                display: inline-block
+                width: 10px
+                height: 10px
+                border: 1px solid #062033
+                border-radius: 50%
+                margin-right: 15px
+                &:last-child
+                    margin-right: 0
+                &:hover
+                    cursor: pointer
+                &.is-selected
+                    background-color: #062033
+
+.team-item
+    position: relative
+    text-align: center
+    &:hover
+        .team-item__hover
+            opacity: 0.8
+    &__block
+        position: relative
+        display: block
+        width: 100%
+        margin-bottom: 15px
+    &__img
+        display: inline-block
+        max-width: 100%
+        height: auto
+    &__hover
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        box-sizing: border-box
+        text-align: center
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        padding: 23px
+        transition: all .4s
+        background-color: #0eb493
+        opacity: 0
+        padding: 15px
+    &__name
+        +rfs(18px)
+        font-weight: 600
+        line-height: 1.33
+        text-align: center
+        color: #062033
+    &__position
+        +rfs(13px)
+        line-height: 1.85
+        text-align: center
+
+.team-hover
+    &__title
+        +rfs(16px)
+        line-height: 1.5
+        color: #ffffff
+        font-weight: bold
+        margin-bottom: 10px
+    &__info
+        +rfs(16px)
+        line-height: 1.5
+        color: #ffffff
+        margin-bottom: 10px
+    &__socials
+        display: flex
+        width: 100%
+        justify-content: center
+
+.team-socials
+    &__link
+        margin-right: 5px
+        width: 42px
+        height: 42px
+        &:last-child
+            margin-right: 0
+        a
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100%
+            height: 100%
+            background-color: rgba(0, 0, 0, 0.3)
+            img
+                display: inline-block
