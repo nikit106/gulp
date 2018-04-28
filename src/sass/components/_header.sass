@@ -32,6 +32,8 @@
           padding: 5px 15px
           +rfs(16px)
           color: rgba(255, 255, 255, 0.3)
+          transition: all .4s
+          border: 1px solid rgba(255,255,255, 0)
 
     &__nav
         +r(sm)
@@ -79,6 +81,7 @@
         height: 2px
         background: #fff
         border-radius: 3px
+        transition: all .4s
 
 .mask
     display: inline-block
@@ -108,6 +111,12 @@
     .header-burger
         .header-burger__line
             background: #0eb493 
+            &:first-child
+                transform: rotate(45deg) translateY(2px)
+            &:last-child
+                transform: rotate(-45deg) translateY(-4px)
+            &:nth-of-type(2)
+                background: #fff
     .header-body__nav
         +r(sm)
-            max-height: 100vh
+            max-height: 110vh

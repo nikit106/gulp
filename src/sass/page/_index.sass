@@ -115,9 +115,10 @@
         &__items
 
 .features-items
-    display: flex
-    justify-content: space-between
+    display: block
     position: relative
+    .flickity-viewport
+        overflow: hidden
     .flickity-page-dots
         position: absolute
         display: flex
@@ -140,6 +141,7 @@
 
     &__feat
         width: 30%
+        margin: 0 3%
         +r(sm)
             width: 48%
         +r(xs)
@@ -269,12 +271,13 @@
         &__people
 
 .team-people
-    display: flex
-    justify-content: space-between
+    display: block
     position: relative
-
+    .flickity-viewport 
+        overflow: hidden
     &__item
         width: 22%
+        margin: 0 3%
         +r(lg)
             width: 30%
         +r(sm)
